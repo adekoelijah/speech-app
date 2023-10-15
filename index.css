@@ -40,6 +40,8 @@ textarea{
 textarea::placeholder{
     font-size: 16px;
     color: #ddd;
+    margin: 10px 10px;
+    width: 100px;
 }
 .row{
     width: 600px;
@@ -88,4 +90,33 @@ select{
     height: 1px;
     width: 1px;
     color: aqua;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero{
+        display: flex;
+    }
+    textarea{
+        width: 300px;
+    }
+    select{
+        margin: 0px;
+        margin-left: 130px;
+        padding: 20px;
+        flex: 0.65;
+        height: 20px;
+        width: 5px;
+        display: flex;
+        
+    }
+    .hero h1{
+        align-items: center;
+        text-align: center;
+    }
+    button{
+        width: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
